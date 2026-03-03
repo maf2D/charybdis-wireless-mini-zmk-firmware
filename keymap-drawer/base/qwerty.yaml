@@ -14,16 +14,16 @@ layers:
   - P
   - L_BASE L_GAME
   - TAB
-  - {t: A, h: LCMD}
+  - {t: A, h: LSHFT}
   - {t: S, h: LALT}
-  - {t: D, h: LSHFT}
+  - {t: D, h: LCMD}
   - {t: F, h: LCTRL}
   - G
   - H
   - {t: J, h: RCTRL}
-  - {t: K, h: RSHFT}
+  - {t: K, h: RCMD}
   - {t: L, h: LALT}
-  - {t: ;, h: RCMD}
+  - {t: ;, h: RSHFT}
   - DEL
   - CLIP HIST
   - Z
@@ -38,7 +38,7 @@ layers:
   - {t: '?', s: '!'}
   - /
   - ESC SCRL SLOW
-  - SYM LCLK
+  - {t: SPACE, h: Sym}
   - BS NUM
   - ENTER
   - SPACE NAV
@@ -164,7 +164,7 @@ layers:
   - '@'
   - /
   - ''
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
