@@ -25,7 +25,7 @@ layers:
   - {t: L, h: LALT}
   - {t: ;, h: RSHFT}
   - {t: '''', s: '"'}
-  - GLOBE
+  - Gui+ SPACE
   - Z
   - X
   - C
