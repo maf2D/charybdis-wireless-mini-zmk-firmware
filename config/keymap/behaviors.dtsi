@@ -124,11 +124,19 @@
             hold-trigger-key-positions = <KEYS_L THUMBS>;
         };
 
+        lt_mo_mkp: layer_tap_mouse_click {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&mo>, <&mkp>;
+        };
+
         td_esc_scrl_slow: td_esc_scrl_slow {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
-            bindings = <&lt 7 ESC>, <&tog 6>; // hold, tap, double_tap
+            bindings = <&lt_mo_mkp 7 LCLK>, <&tog 6>; // tap=left click, hold=scroll layer, double tap=toggle slow layer
         };
 
         lt_nav: nav_layer_tap {

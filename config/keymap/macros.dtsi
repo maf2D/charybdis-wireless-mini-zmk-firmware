@@ -18,28 +18,28 @@
             bindings = <&kp LC(B) &kp SPACE>;
         };
 
-        tmux_w0: tmux_w0 { // tmux window 0 (attch)
+        tmux_w0: tmux_w0 { // tmux detach
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp D>;
+        };
+
+        tmux_w1: tmux_w1 { // tmux window 0
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp N0>;
         };
 
-        tmux_w1: tmux_w1 { // tmux window 1 (next)
+        tmux_w2: tmux_w2 { // tmux window 1
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp N1>;
         };
 
-        tmux_w2: tmux_w2 { // tmux window 2 (sesh)
+        tmux_w3: tmux_w3 { // tmux window 2
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LC(B) &kp N2>;
-        };
-
-        tmux_w3: tmux_w3 { // tmux window 3 (sync)
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp N3>;
         };
 
         create_or_attach: create_or_attach {

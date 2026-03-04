@@ -170,4 +170,3 @@ See the [local build README](local-build/README.md) for additional details, incl
 - [nickcoutsos](https://github.com/nickcoutsos/keymap-editor)
 - [caksoylar](https://github.com/caksoylar/keymap-drawer)
 - [urob](https://github.com/urob/zmk-config#timeless-homerow-mods)
-
