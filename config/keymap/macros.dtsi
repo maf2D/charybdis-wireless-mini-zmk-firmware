@@ -242,5 +242,16 @@
                 , <&macro_tap &kp FSLH>
                 ;
         };
+
+        dbl_click: dbl_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <30>;
+            tap-ms = <10>;
+            bindings
+                = <&macro_tap &mkp MB1>
+                , <&macro_tap &mkp MB1>
+                ;
+        };
     };
 };

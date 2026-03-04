@@ -240,5 +240,12 @@
             bindings      = <&kp COMMA>, <&kp SEMICOLON>;
             mods          = <(MOD_LSFT | MOD_RSFT)>;
         };
+
+        td_mb1: td_mb1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mkp MB1>, <&dbl_click>; // tap=left click, double tap=double click
+        };
     };
 };
