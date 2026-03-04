@@ -187,8 +187,7 @@ jobs:
             "-DZMK_CONFIG=$CONFIG_DIR" \
             "-DSHIELD=$SH" \
             "$KEYMAP_OPTION" \
-            "$SNIPPET_OPTION" \
-            "-DZMK_EXTRA_MODULES=$GITHUB_WORKSPACE/zmk-pmw3610-driver"
+            "$SNIPPET_OPTION"
 
           ART=$(if [[ -f "$BUILD_DIR/zephyr/zmk.uf2" ]]; then echo zmk.uf2; else echo zmk.bin; fi)
           cp "$BUILD_DIR/zephyr/$ART" "$GITHUB_WORKSPACE/out/$NM/$SH.${ART##*.}"

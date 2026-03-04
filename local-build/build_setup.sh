@@ -37,7 +37,7 @@ west zephyr-export
 
 # Set permissions so users can delete them
 echo "🛠️  Setting permissions on ZMK resources:"
-chmod -R 777 .west zmk zephyr modules zmk-pmw3610-driver
+chmod -R 777 .west zmk zephyr modules
 
 # # Optional: confirm checkout
 # echo "🛠️  West workspace ready. Project structure:"
@@ -126,9 +126,6 @@ for shield in "${shields[@]}"; do
   setup_sandbox "$shield"
   cd "$BUILD_REPO/zmk"
 
-  # Load in modules (e.g. PMW3610 module)
-  ZMK_LOAD_ARG="-DZMK_EXTRA_MODULES=$BUILD_REPO/zmk-pmw3610-driver"
-
   # Install only the custom shield into the ZMK module’s shields directory
   printf "⚙️  %s\n" "→ Installing custom shield ($shield) into ZMK module"
   ZMK_SHIELDS_DIR="$BUILD_REPO/zmk/app/boards/shields"
@@ -164,7 +161,7 @@ for shield in "${shields[@]}"; do
 
   for target in "${shield_targets[@]}"; do
     for keymap in "${keymaps[@]}"; do
-      board="nice_nano_v2"
+      board="nice_nano//zmk"
       artifact_name="${target}-${keymap}-${board}-zmk"
       BUILD_DIR=$(mktemp -d)
       printf "🗂  %s\n" "→ Build dir: $BUILD_DIR"
@@ -193,7 +190,7 @@ for shield in "${shields[@]}"; do
         $USB_LOGGING_SNIPPET \
         -- \
           -DZMK_CONFIG="$BASE_DIR/$CONFIG_PATH" \
-          -DSHIELD="$target" $ZMK_LOAD_ARG
+          -DSHIELD="$target"
       echo ""
       
       # Find the built firmware (prefer .uf2, else fallback)
@@ -241,7 +238,7 @@ done
 # --- BUILD RESET FIRMWARE ---
 setup_sandbox "settings_reset"
 cd "$BUILD_REPO/zmk"
-RESET_BOARD="nice_nano_v2"
+RESET_BOARD="nice_nano//zmk"
 BUILD_DIR=$(mktemp -d)
 FIRM_PATH="/workspaces/zmk/firmwares/settings_reset.uf2"
 printf "🗂  %s\n" "→ Build dir: $BUILD_DIR"
