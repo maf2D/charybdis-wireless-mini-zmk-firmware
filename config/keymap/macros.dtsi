@@ -12,6 +12,12 @@
             bindings = <&macro_tap &kp LC(B) &kp DQT>;
         };
 
+        sync_panes: sync_panes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp SPACE>;
+        };
+
         tmux_w0: tmux_w0 { // tmux window 0 (attch)
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
