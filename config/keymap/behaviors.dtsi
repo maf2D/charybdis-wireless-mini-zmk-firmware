@@ -212,6 +212,13 @@
             mods          = <(MOD_LSFT | MOD_RSFT)>;
         };
 
+        mm_sq_dq: single_double_quote {
+            compatible    = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings      = <&kp APOS>, <&kp DQT>;
+            mods          = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
         mm_pr_col: period_colon {
             compatible    = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
