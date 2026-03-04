@@ -135,7 +135,7 @@
         td_esc_scrl_slow: td_esc_scrl_slow {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <350>;
             bindings = <&lt_mo_mkp 7 LCLK>, <&tog 6>; // tap=left click, hold=scroll layer, double tap=toggle slow layer
         };
 
