@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: qwerty}
 layers:
   Base:
-  - SEARCH
+  - ESC
   - Q
   - W
   - E
@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - L_BASE L_GAME
+  - DEL
   - TAB
   - {t: A, h: LSHFT}
   - {t: S, h: LALT}
@@ -24,8 +24,8 @@ layers:
   - {t: K, h: RCMD}
   - {t: L, h: LALT}
   - {t: ;, h: RSHFT}
-  - DEL
-  - CLIP HIST
+  - {t: '''', s: '"'}
+  - GLOBE
   - Z
   - X
   - C
@@ -91,10 +91,10 @@ layers:
   - ''
   - WHEEL U
   - WHEEL R
-  - TMUX DETCH
-  - TMUX ATTCH
-  - TMUX NEXT
-  - TMUX SESH
+  - '&tmux_w0'
+  - '&tmux_w1'
+  - '&tmux_w2'
+  - '&tmux_w3'
   - TMUX SYNC
   - ''
   - TAB
