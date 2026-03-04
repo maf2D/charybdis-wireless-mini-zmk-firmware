@@ -25,7 +25,7 @@ layers:
   - {t: L, h: LALT}
   - {t: ;, h: RSHFT}
   - {t: '''', s: '"'}
-  - Gui+ SPACE
+  - CAPS
   - Z
   - X
   - C
@@ -95,7 +95,7 @@ layers:
   - '&tmux_w1'
   - '&tmux_w2'
   - '&tmux_w3'
-  - TMUX SYNC
+  - '&tmux_w4'
   - ''
   - TAB
   - BACK
