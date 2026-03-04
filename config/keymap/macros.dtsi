@@ -42,6 +42,12 @@
             bindings = <&kp LC(B) &kp N2>;
         };
 
+        tmux_w4: tmux_w4 { // tmux window 3
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp N3>;
+        };
+
         create_or_attach: create_or_attach {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
