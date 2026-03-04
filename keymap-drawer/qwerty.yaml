@@ -57,8 +57,8 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - ''
-  - ''
-  - ''
+  - '&td_mb1'
+  - '&mkp MB2'
   - BACK SPACE
   - LSHIFT
   - '-'
@@ -103,11 +103,11 @@ layers:
   - LCMD
   - LCTRL
   - FWD
-  - HSPLIT
   - LEFT
   - DOWN
   - UP
   - RIGHT
+  - VSPLIT
   - ''
   - ''
   - MOVE L
@@ -115,11 +115,11 @@ layers:
   - MOVE UP
   - MOVE R
   - ''
-  - VSPLIT
   - HOME
   - PG DN
   - PG UP
   - END
+  - HSPLIT
   - ''
   - ''
   - ''
