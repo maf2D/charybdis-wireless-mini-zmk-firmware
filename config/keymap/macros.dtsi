@@ -12,28 +12,28 @@
             bindings = <&macro_tap &kp LC(B) &kp DQT>;
         };
 
-        detach_session: detach_session {
+        tmux_w0: tmux_w0 { // tmux window 0 (attch)
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp D>;
+            bindings = <&kp LC(B) &kp N0>;
         };
 
-        sync_panes: sync_panes {
+        tmux_w1: tmux_w1 { // tmux window 1 (next)
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp SPACE>;
+            bindings = <&kp LC(B) &kp N1>;
         };
 
-        next_pane: next_pane {
+        tmux_w2: tmux_w2 { // tmux window 2 (sesh)
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp O>;
+            bindings = <&kp LC(B) &kp N2>;
         };
 
-        show_sessions: show_sessions {
+        tmux_w3: tmux_w3 { // tmux window 3 (sync)
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(B) &kp S>;
+            bindings = <&kp LC(B) &kp N3>;
         };
 
         create_or_attach: create_or_attach {
