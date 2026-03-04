@@ -49,6 +49,8 @@
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
+        // swap sensor X/Y axes to match physical PCB orientation
+        swap-xy;
         // keep sensor awake while ZMK is active; enters downshift only on idle/sleep
         force-awake;
     };
