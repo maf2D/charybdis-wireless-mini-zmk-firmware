@@ -97,10 +97,10 @@ layers:
   - '&tmux_w3'
   - '&tmux_w4'
   - ''
-  - TAB
   - BACK
-  - LALT
   - LSHFT
+  - LALT
+  - LCMD
   - LCTRL
   - FWD
   - HSPLIT
