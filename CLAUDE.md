@@ -81,9 +81,17 @@ docker-compose run --rm builder
 
 Double-press reset button on a device to enter bootloader (mounts as USB storage).
 
+## Active Keymap
+
+The build uses `qwerty.keymap` (defined in `build.yaml`). **Any keymap changes must be applied to both `qwerty.keymap` and `colemak_dh.keymap`** to keep them in sync. `behaviors.dtsi`, `combos.dtsi`, and `macros.dtsi` are shared and only need to be edited once.
+
+## Flashing (dongle setup)
+
+Since the keymap lives entirely on the dongle, **only the dongle needs to be reflashed** for keymap/behavior changes. The left and right halves only send raw key presses over BLE.
+
 ## Common Edit Locations
 
-- **Change a key binding:** `config/keymap/colemak_dh.keymap`
+- **Change a key binding:** `config/keymap/qwerty.keymap` + `config/keymap/colemak_dh.keymap`
 - **Add/edit a macro:** `config/keymap/macros.dtsi`
 - **Add/edit a combo:** `config/keymap/combos.dtsi`
 - **Add/edit a behavior (tap-dance, hold-tap):** `config/keymap/behaviors.dtsi`
