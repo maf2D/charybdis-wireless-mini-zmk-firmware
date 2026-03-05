@@ -56,11 +56,11 @@ layers:
   - {t: '%', s: F10}
   - ''
   - {t: ▽, type: trans}
-  - ''
-  - '&td_mb1'
-  - '&mkp MB2'
+  - LSHFT
+  - LALT
+  - LCMD
+  - LCTRL
   - BACK SPACE
-  - LSHIFT
   - '-'
   - {t: '4', s: F4}
   - {t: '5', s: F5}
@@ -129,8 +129,8 @@ layers:
   Sym:
   - ''
   - '~'
-  - $
   - ^
+  - $
   - '&move_line_up'
   - '&mc_add_above'
   - '&'
