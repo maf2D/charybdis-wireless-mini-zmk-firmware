@@ -1,5 +1,11 @@
 / {
     macros {
+        cmd_shift_a_enter: cmd_shift_a_enter { // cmd + shift + a, enter
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LG(LS(A))>, <&macro_wait_time 200>, <&macro_tap &kp ENTER>;
+        };
+
         v_split: v_split {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
