@@ -253,5 +253,151 @@
                 , <&macro_tap &mkp MB1>
                 ;
         };
+
+        // --- LEADER layer macros (nvim / tmux) ---
+
+        ldr_pf: ldr_pf { // nvim: <leader>pf
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp P &kp F>;
+        };
+
+        ldr_pF: ldr_pF { // nvim: <leader>pF
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp P &kp LS(F)>;
+        };
+
+        ldr_ps: ldr_ps { // nvim: <leader>ps
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp P &kp S>;
+        };
+
+        ldr_pr: ldr_pr { // nvim: <leader>pr
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp P &kp R>;
+        };
+
+        ldr_prev_err: ldr_prev_err { // nvim: [e (prev diagnostic)
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LBKT &kp E>;
+        };
+
+        ldr_next_err: ldr_next_err { // nvim: ]e (next diagnostic)
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp RBKT &kp E>;
+        };
+
+        ldr_pv: ldr_pv { // nvim: <leader>pv
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp P &kp V>;
+        };
+
+        ldr_pc: ldr_pc { // nvim: <leader>pc
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp P &kp C>;
+        };
+
+        ldr_sn: ldr_sn { // nvim: <leader>n
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp N>;
+        };
+
+        ldr_sm: ldr_sm { // nvim: <leader>m
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp M>;
+        };
+
+        ldr_sN: ldr_sN { // nvim: <leader>N
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp LS(N)>;
+        };
+
+        ldr_sM: ldr_sM { // nvim: <leader>M
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp LS(M)>;
+        };
+
+        ldr_gst: ldr_gst { // nvim: <leader>gst
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp G &kp S &kp T>;
+        };
+
+        ldr_gp: ldr_gp { // nvim: <leader>gp
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp G &kp P>;
+        };
+
+        ldr_gd: ldr_gd { // nvim: <leader>gd
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp G &kp D>;
+        };
+
+        ldr_gr: ldr_gr { // nvim: <leader>gr
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp G &kp R>;
+        };
+
+        ldr_gR: ldr_gR { // nvim: <leader>gR
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp G &kp LS(R)>;
+        };
+
+        ldr_prev_hunk: ldr_prev_hunk { // nvim: [g (prev git hunk)
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LBKT &kp G>;
+        };
+
+        ldr_next_hunk: ldr_next_hunk { // nvim: ]g (next git hunk)
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp RBKT &kp G>;
+        };
+
+        ldr_win_only: ldr_win_only { // nvim: ctrl+w, o (only window)
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LC(W) &kp O>;
+        };
+
+        ldr_win_close: ldr_win_close { // nvim: ctrl+w, c (close window)
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LC(W) &kp C>;
+        };
+
+        tmux_close: tmux_close { // tmux: ctrl+b, x, y (close pane)
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp LC(B) &kp X &kp Y>;
+        };
+
+        ldr_pg: ldr_pg { // nvim: <leader>pg
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp P &kp G>;
+        };
+
+        ldr_gh: ldr_gh { // nvim: <leader>gh
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp G &kp H>;
+        };
     };
 };
