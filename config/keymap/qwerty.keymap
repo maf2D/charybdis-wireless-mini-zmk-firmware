@@ -126,9 +126,9 @@
 // ╭──────┬──────────────────┬──────────────┬──────────────┬────────────────┬────────────────╮  ╭────────────┬──────────┬────────────────┬────────────────┬──────┬──────╮
    &none   &none              &ldr_prev_err  &ldr_next_err  &ldr_win_only    &ldr_win_close      &ldr_gh      &ldr_pg    &ldr_prev_hunk   &ldr_next_hunk   &none  &none
 // ├──────┼──────────────────┼──────────────┼──────────────┼────────────────┼────────────────┤  ├────────────┼──────────┼────────────────┼────────────────┼──────┼──────┤
-   &ldr_pc &ldr_pr            &ldr_ps        &ldr_pF        &ldr_pf          &ldr_pv             &ldr_gst     &ldr_gp    &ldr_gd          &ldr_gr          &ldr_gR  &none
+   &ldr_pc &ldr_pr            &ldr_ps        &ldr_pf_cap    &ldr_pf          &ldr_pv             &ldr_gst     &ldr_gp    &ldr_gd          &ldr_gr          &ldr_gr_cap  &none
 // ├──────┼──────────────────┼──────────────┼──────────────┼────────────────┼────────────────┤  ├────────────┼──────────┼────────────────┼────────────────┼──────┼──────┤
-   &none   &ldr_sM            &ldr_sN        &ldr_sm        &ldr_sn          &none               &v_split     &tmux_w1   &tmux_w2         &tmux_w3         &tmux_w4  &tmux_close
+   &none   &ldr_sm_cap        &ldr_sn_cap    &ldr_sm        &ldr_sn          &none               &v_split     &tmux_w1   &tmux_w2         &tmux_w3         &tmux_w4  &tmux_close
 // ╰──────┴──────────────────┴──────────────┼──────────────┼────────────────┼────────────────┤  ├────────────┼──────────┼────────────────┴────────────────┴──────┴──────╯
                                              &none          &none            &none               &trans       &none
             >;
