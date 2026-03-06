@@ -86,11 +86,11 @@ layers:
   - SPACE
   Nav:
   - ''
-  - WHEEL L
-  - WHEEL D
+  - Gui+Sft+ T
+  - Ctl+Sft+ TAB
+  - Ctl+ TAB
+  - Gui+Sft+ A
   - ''
-  - WHEEL U
-  - WHEEL R
   - VOL DN
   - PREVIOUS
   - PP
@@ -107,7 +107,7 @@ layers:
   - DOWN
   - UP
   - RIGHT
-  - VSPLIT
+  - ''
   - ''
   - ''
   - MOVE L
@@ -119,7 +119,7 @@ layers:
   - PG DN
   - PG UP
   - END
-  - HSPLIT
+  - ''
   - ''
   - ''
   - ''
