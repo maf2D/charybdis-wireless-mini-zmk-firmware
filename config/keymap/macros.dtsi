@@ -304,28 +304,28 @@
             bindings = <&macro_tap &kp SPACE &kp P &kp C>;
         };
 
-        ldr_sn: ldr_sn { // nvim: <leader>n
+        ldr_sn: ldr_sn { // nvim: <leader>1
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp SPACE &kp N>;
+            bindings = <&macro_tap &kp SPACE &kp N1>;
         };
 
-        ldr_sm: ldr_sm { // nvim: <leader>m
+        ldr_sm: ldr_sm { // nvim: <leader>2
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp SPACE &kp M>;
+            bindings = <&macro_tap &kp SPACE &kp N2>;
         };
 
-        ldr_sn_cap: ldr_sn_cap { // nvim: <leader>N
+        ldr_sn_cap: ldr_sn_cap { // nvim: <leader>3
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp SPACE &kp LS(N)>;
+            bindings = <&macro_tap &kp SPACE &kp N3>;
         };
 
-        ldr_sm_cap: ldr_sm_cap { // nvim: <leader>M
+        ldr_sm_cap: ldr_sm_cap { // nvim: <leader>4
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &kp SPACE &kp LS(M)>;
+            bindings = <&macro_tap &kp SPACE &kp N4>;
         };
 
         ldr_gst: ldr_gst { // nvim: <leader>gst
