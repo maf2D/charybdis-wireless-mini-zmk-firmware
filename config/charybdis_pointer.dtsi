@@ -13,9 +13,9 @@
         layers           = <7>;
         input-processors = <
             &zip_xy_transform (INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-            &zip_xy_scaler 1 15                              // Scales the trackball input before mapping
+            &zip_xy_scaler 1 20                              // Scales the trackball input before mapping
             &zip_xy_to_scroll_mapper                         // Converts XY movement to scroll events
-            &zip_scroll_scaler 1 3                           // Reduces scroll speed (1/3 of original)
+            &zip_scroll_scaler 1 5                           // Reduces scroll speed (1/5 of original)
             &zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT) // Inverts the scroll direction
         >;
     };
