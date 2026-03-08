@@ -39,9 +39,9 @@ layers:
   - /
   - ESC SCRL SLOW
   - {t: SPACE, h: Sym}
-  - BS NUM
+  - {t: BACK SPACE, h: Num}
   - {t: ENTER, h: Nvim}
-  - SPACE NAV
+  - {t: SPACE, h: Nav}
   Num:
   - ''
   - ''
@@ -81,7 +81,7 @@ layers:
   - /
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - {type: held}
   - '0'
   - SPACE
   Nav:
@@ -125,7 +125,7 @@ layers:
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
+  - {type: held}
   Sym:
   - ''
   - '~'
