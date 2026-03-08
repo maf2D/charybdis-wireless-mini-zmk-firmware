@@ -103,7 +103,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <160>;
             require-prior-idle-ms = <65>;
             retro-tap;
@@ -116,7 +116,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <160>;
             require-prior-idle-ms = <55>;
             retro-tap;
@@ -127,8 +127,9 @@
         lt_mo_mkp: layer_tap_mouse_click {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <150>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <100>;
+            hold-while-undecided;
             bindings = <&mo>, <&mkp>;
         };
 
@@ -136,14 +137,15 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <200>;
+            tapping-term-ms = <100>;
+            hold-while-undecided;
             bindings = <&mkp>, <&mkp>; // hold=mouse button held, tap=mouse button tap
         };
 
         td_esc_scrl_slow: td_esc_scrl_slow {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
             bindings = <&lt_mo_mkp 7 LCLK>, <&ht_drag LCLK RCLK>, <&tog 6>; // tap=left click, hold=scroll layer, double-tap=right click, double-tap+hold=hold left click (drag), triple-tap=toggle slow layer (speed)
         };
 
@@ -153,13 +155,6 @@
             flavor = "tap-preferred";
             tapping-term-ms = <170>;
             bindings = <&mo>, <&kp>;
-        };
-
-        td_space_nav: td_space {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <110>;
-            bindings = <&lt_nav 2 SPACE>, <&kp SPACE>; // hold, tap, double_tap
         };
 
         mo_clk: mo_click {
@@ -182,16 +177,9 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor       = "hold-preferred";
-            tapping-term-ms = <40>;
+            tapping-term-ms = <170>;
             hold-while-undecided;
             bindings = <&mo>, <&kp>;
-        };
-
-        td_bs: td_bs {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <170>;
-            bindings = <&mo_kp 1 BACKSPACE>, <&kp BACKSPACE>; // hold, tap, double_tap
         };
 
         httl: ht_two_layers {
