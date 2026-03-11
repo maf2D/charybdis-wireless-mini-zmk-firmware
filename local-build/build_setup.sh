@@ -27,6 +27,13 @@ fi
 git config --global --add safe.directory /workspaces/zmk/zephyr
 git config --global --add safe.directory /workspaces/zmk/zmk
 
+# Reset any local changes in west modules to allow clean checkout
+for dir in zmk zephyr modules; do
+  if [ -d "$dir/.git" ]; then
+    git -C "$dir" checkout -- .
+  fi
+done
+
 # Always update to fetch all modules and dependencies
 echo "🛠️  Updating west modules..."
 west update
