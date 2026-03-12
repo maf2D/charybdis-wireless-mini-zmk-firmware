@@ -124,9 +124,9 @@
             display-name = "Nvim";
             bindings = <
 // ╭──────┬──────────────────┬──────────────┬──────────────┬────────────────┬────────────────╮  ╭────────────┬──────────┬────────────────┬────────────────┬──────┬──────╮
-   &none   &none              &ldr_pr        &ldr_pf_cap    &ldr_win_only    &ldr_win_close      &ldr_gh      &ldr_pg    &ldr_gr          &ldr_gr_cap      &none  &none
+   &none   &none              &ldr_pr        &ldr_pf_cap    &ldr_win_only    &ldr_win_close      &ldr_gh      &ldr_pg    &ldr_gd          &ldr_gr_cap      &none  &none
 // ├──────┼──────────────────┼──────────────┼──────────────┼────────────────┼────────────────┤  ├────────────┼──────────┼────────────────┼────────────────┼──────┼──────┤
-   &ldr_pc &ldr_ps            &ldr_prev_err  &ldr_next_err  &ldr_pf          &ldr_pv             &ldr_gst     &ldr_gp    &ldr_prev_hunk   &ldr_next_hunk   &ldr_gd  &none
+   &ldr_pc &ldr_ps            &ldr_prev_err  &ldr_next_err  &ldr_pf          &ldr_pv             &ldr_gst     &ldr_gp    &ldr_prev_hunk   &ldr_next_hunk   &ldr_gr  &none
 // ├──────┼──────────────────┼──────────────┼──────────────┼────────────────┼────────────────┤  ├────────────┼──────────┼────────────────┼────────────────┼──────┼──────┤
    &none   &ldr_sm_cap        &ldr_sn_cap    &ldr_sm        &ldr_sn          &none               &v_split     &tmux_w1   &tmux_w2         &tmux_w3         &tmux_w4  &tmux_close
 // ╰──────┴──────────────────┴──────────────┼──────────────┼────────────────┼────────────────┤  ├────────────┼──────────┼────────────────┴────────────────┴──────┴──────╯
