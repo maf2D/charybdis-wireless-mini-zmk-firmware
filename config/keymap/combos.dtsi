@@ -28,6 +28,12 @@
             key-positions = <27 28>;
         };
 
+        combo_right_click_thumb_f {
+            bindings = <&mkp RCLK>;
+            key-positions = <36 16>;
+            timeout-ms = <150>;
+        };
+
         combo_drag {
             bindings = <&mkp LCLK>;
             key-positions = <36 15>;
