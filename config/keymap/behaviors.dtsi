@@ -146,7 +146,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&lt_mo_mkp 7 LCLK>, <&ht_drag LCLK RCLK>, <&tog 6>; // tap=left click, hold=scroll layer, double-tap=right click, double-tap+hold=hold left click (drag), triple-tap=toggle slow layer (speed)
+            bindings = <&lt_mo_mkp 7 LCLK>, <&mkp RCLK>, <&tog 6>; // tap=left click, hold=scroll layer, double-tap=right click, triple-tap=toggle slow layer
         };
 
         lt_nav: nav_layer_tap {
