@@ -390,5 +390,7 @@ combos:
   k: Mid CLK
 - p: [27, 28]
   k: R CLK
+- p: [36, 16]
+  k: R CLK
 - p: [36, 15]
   k: L CLK
