@@ -170,7 +170,7 @@ layers:
   - {t: ▽, type: trans}
   Game:
   - '1'
-  - TAB
+  - ESC
   - Q
   - W
   - E
@@ -182,7 +182,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - '2'
-  - LCTRL
+  - LSHFT
   - A
   - S
   - D
@@ -194,8 +194,8 @@ layers:
   - ''
   - ''
   - '3'
-  - LSHFT
-  - Y
+  - LCTRL
+  - Z
   - X
   - C
   - V
@@ -205,7 +205,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - TAB
   - SPACE
   - LEFT ALT
   - ''
