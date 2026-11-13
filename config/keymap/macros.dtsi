@@ -54,6 +54,24 @@
             bindings = <&kp LC(B) &kp N3>;
         };
 
+        tmux_w5: tmux_w5 { // tmux window 4
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp N4>;
+        };
+
+        ldr_hp_list: ldr_hp_list { // nvim harpoon: <leader>h (show list)
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp H>;
+        };
+
+        ldr_hp_add: ldr_hp_add { // nvim harpoon: <leader>a (add file)
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap &kp SPACE &kp A>;
+        };
+
         create_or_attach: create_or_attach {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
